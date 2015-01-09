@@ -1,0 +1,510 @@
+
+@import url('html5reset.css');
+@import url(http://fonts.googleapis.com/css?family=Lora);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+
+body {
+	 /*overflow: hidden;*/
+}
+
+a:link, a:visited, a:active {
+	text-decoration: underline;
+	font-style: oblique;
+	color:black;
+
+	opacity: 1;
+	  -o-transition:.15s;
+	  -ms-transition:.15s;
+	  -moz-transition:.15s;
+	  -webkit-transition:.15s;
+	  transition:.15s;
+}
+
+a:hover {
+	color:#f3f474;
+}
+
+abbr[title] {
+	border-bottom: none;
+}
+
+/*==========================================
+L O G O
+==========================================*/
+
+header {
+	display:inline-block;
+	background-color: #c7dfb4;
+	/*background:url('back.jpg');*/
+	position: fixed;
+	float:left;
+	width:23%;
+	height: 300px;
+
+/*	-webkit-transition: background 300ms ease-in 200ms;
+    -moz-transition: background 300ms ease-in 200ms;
+    -o-transition: background 300ms ease-in 200ms;
+    transition: background 300ms ease-in 200ms;*/
+
+	opacity: 1;
+	  -o-transition:.5s;
+	  -ms-transition:.5s;
+	  -moz-transition:.5s;
+	  -webkit-transition:.5s;
+	  transition:.5s;
+	}
+
+header:hover {
+	opacity: .5;
+	/*background-color: lavender;*/
+	background:url('back.jpg');
+	background-size: cover;
+}
+
+section header h1 {
+	text-align: center;
+	font-size: 3em;
+	color:white;
+/*	background:url(back.jpg);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;*/
+	font-family:"Raleway";
+	margin-top:100px;
+}
+
+section header h2 {
+	font-size: 1.5em;
+	color:white;
+	text-align: center;
+	font-family: Baskerville;
+	font-style: italic;
+}
+
+/*=========================================
+M A I N   T E X T
+=========================================*/
+
+.summary {
+	font-size: 1em;
+	text-align:right;
+	text-transform:lowercase;
+	font-family:helvetica;
+	color:#e3e3e3;
+	font-style: italic;
+	width:77%;
+	float:right;
+	padding-bottom:44px;
+	background-color: white;
+}
+
+.summary a {
+	color:#e3e3e3;
+}
+
+.summary p:first-child {
+	margin-bottom: 6px;
+}
+
+
+div section .preamble h3:first-child {
+	/*color:#c7dfb4;*/
+	background: -webkit-linear-gradient(left, #c7dfb4, #7f1c2a);
+  	background: -o-linear-gradient(right, #c7dfb4, #7f1c2a); 
+  	background: -moz-linear-gradient(right, #c7dfb4, #7f1c2a); 
+  	background: linear-gradient(to right, #c7dfb4, #7f1c2a); 
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	text-align: left;
+	margin: -20px 0 0 45px;
+	font-size: 2em;
+	font-family:"Raleway";
+	text-transform:uppercase;
+	border-top: none;
+}
+
+.preamble {
+	width:77%;
+	float:left;
+	margin-left:23%;
+	height:220px;
+	left:50px;
+	background: linear-gradient(white, #c9c9c9);
+}
+
+.preamble p{
+	font-family:"Lora";
+	font-size: 1.2em;
+	text-align: justify;
+	margin-left: 45px;
+	margin-right:134px;
+}
+
+div[role=article] h3:first-child {
+	color:#7f1c2a;
+	font-size: 2em;
+	font-family:"Raleway";
+	text-transform:uppercase;
+	border-top: 2px solid #7f1c2a;
+	/*display:inline-block;*/
+}
+
+div[role=main] {
+	float:right;
+	width:77%;
+	background-color:#c9c9c9;
+}
+
+.explanation, .benefits {
+	text-align:justify;
+	float:left;
+	margin-bottom:100px;
+	margin-left:30%;
+	margin-right:14%;
+}
+
+.explanation h3, .benefits h3 {
+	float:left;
+	margin-right: 10px;
+	margin-bottom:-5px;
+}
+
+.explanation p, .benefits p {
+	margin-bottom:12px;
+	font-size: 1.2em;
+	font-family:"Lora";
+}
+
+.participation, .requirements {
+	text-align:justify;
+	float:left;
+	margin-bottom:100px;
+	margin-left:14%;
+	margin-right:30%;
+}
+
+.participation h3, .requirements h3 {
+	float:right;
+	margin-left: 10px;
+	margin-bottom: -5px;
+}
+
+.participation p, .requirements p {
+	text-align:justify;
+	margin-bottom:12px;
+	font-size: 1.2em;
+	font-family:"Lora";
+}
+
+.requirements p[role=contentinfo] {
+	margin-top: 100px;
+	text-align:right;
+}
+
+/*======================================
+F O O T E R
+======================================*/
+
+
+footer {
+
+	background: linear-gradient(#c9c9c9, white);
+	padding-bottom: 6%;
+	font-size: 2em;
+	text-align: center;
+	vertical-align: middle;
+	/*margin-bottom:50px;*/
+}
+
+footer a:hover {
+	color:#cfb9d7;
+}
+
+
+/*======================================
+ S I D E B A R
+======================================*/
+
+
+.sidebar {
+	background-color:#cfb9d7;
+	float:left;
+	position:fixed;
+	top: 300px;
+	width:23%;
+	height:55%;
+	padding-bottom: 1000%;
+	overflow-y:scroll;
+}
+
+::-webkit-scrollbar{
+  width:10px;
+} 
+
+::-webkit-scrollbar-thumb{
+  background-color:#f3f474;
+} 
+
+li {
+	font-family:helvetica;
+	margin-bottom:5px; 
+}
+
+.design-selection {
+	margin-bottom: 18px;
+}
+
+.design-archives {
+	margin-bottom: 18px;
+}
+
+/*=====================================================
+B I G
+=====================================================*/
+
+@media all and (min-width:1340px)  {
+
+	.sidebar {
+		font-size: 1.2em
+	}
+}
+
+@media all and (min-width:1760px)  {
+
+	.sidebar {
+		font-size: 1.5em;
+	}
+
+	.design-selection {
+	margin-bottom: 35px;
+	}
+
+	.design-archives {
+	margin-bottom: 35px;
+	}
+
+	section header h1 {
+	font-size: 3.5em;
+	}
+
+	section header h2 {
+	font-size: 2.1em;
+	}
+
+}
+
+/*=====================================================
+M E D I U M
+=====================================================
+*/
+
+@media all and (min-width:771px) and (max-width:930px) {
+
+	::-webkit-scrollbar{
+ 	 width:4px;
+	} 
+
+	header {
+		height: 200px;
+	}
+
+	section header h1 {
+		text-align: center;
+		font-size: 2em;
+		color:white;
+		font-family: helvetica;
+		margin-top:44px;
+	}
+
+	section header h2 {
+		font-size: 1.2em;
+	}
+
+	div section .preamble h3:first-child {
+		font-size: 1.5em;
+	}
+
+	.preamble p{
+		font-size:1em;
+	}
+
+	div[role=article] h3:first-child {
+		font-size:1.5em;
+	}
+
+	.explanation h3, .benefits h3,  {
+		float:none;
+		margin-right:0;
+		margin-bottom:4px;
+	}
+	.participation h3, .requirements h3 {
+		float:none;
+		margin-left:0;
+		margin-bottom:4px;
+	}
+
+	.explanation p, .benefits p, .participation p, .requirements p {
+		font-size: 1em;
+	}
+
+	.sidebar {
+		top: 200px;
+	}
+
+	footer {
+		font-size: 1.2em;
+	}
+}
+
+
+/*=====================================================
+M O B I L E
+=====================================================
+*/
+
+/* override css for mobile browsers */
+@media all and (min-width:275px) and (max-width:770px) {
+	body {
+		font-size:12px;
+		background-color:white;
+	}
+
+	::-webkit-scrollbar{
+ 	 width:0px;
+	} 
+
+
+	header {
+	display:inline-block;
+	background-color: #c7dfb4;
+	/*background:url('back.jpg');*/
+	position:relative;
+	float:left;
+	width:100%;
+	height: 150px;
+	}
+
+	section header h1 {
+	text-align: center;
+	font-size: 3em;
+	color:white;
+	/*	background:url(back.jpg);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;*/
+	font-family:"Raleway";
+	margin-top:35px;
+	}
+
+	section header h2 {
+	font-size: 1.5em;
+	color:white;
+	text-align: center;
+	font-family: Baskerville;
+	font-style: italic;
+	}
+
+	.summary {
+	width:100%;
+	clear:left;
+	padding-bottom:44px;
+	background-color: white;
+	position:relative;
+	}
+
+	.summary p:first-child {
+	margin-bottom: 6px;
+	}
+
+	.preamble {
+	width:100%;
+	float:left;
+	margin-left:0px;
+	position:relative;
+	height:100%;
+	left:0px;
+	/*background: linear-gradient(#f3f474, #c9c9c9);*/
+	background: linear-gradient(white, #c9c9c9);
+	}
+
+	.preamble p{
+	font-family:"Lora";
+	font-size: 1.2em;
+	text-align: justify;
+	/*margin:0 16.2% 6px 16.1%;*/
+	margin-left:10%;
+	margin-right:15%;
+	}
+
+	div section .preamble h3:first-child {
+	margin-left:10%;
+	font-size: 2em;
+	}
+
+
+	div[role=main] {
+	float:left;
+	width:100%;
+	padding-top: 75px;
+	background-color:#c9c9c9;
+	}
+
+	.explanation, .benefits {
+	text-align:justify;
+	float:left;
+	margin-bottom:75px;
+	margin-left:15%;
+	margin-right:9%;
+	}
+
+	.explanation h3, .benefits h3 {
+	float:left;
+	margin-right: 10px;
+	margin-bottom:-5px;
+	}
+
+	.explanation p, .benefits p {
+	margin-bottom:12px;
+	font-size: 1.2em;
+	font-family:"Lora";
+	}
+
+	.participation, .requirements {
+	text-align:justify;
+	float:left;
+	margin-bottom:100px;
+	margin-left: 10%;
+	margin-right:15%;
+	}
+
+	.participation h3, .requirements h3 {
+	float:right;
+	margin-left: 10px;
+	margin-bottom: -5px;
+	}
+
+	.participation p, .requirements p {
+	text-align:justify;
+	margin-bottom:12px;
+	font-size: 1.2em;
+	font-family:"Lora";
+	}		
+
+	.requirements p[role=contentinfo] {
+	margin-top: 50px;
+	text-align:right;
+	}
+
+	footer {
+		background: linear-gradient(#c9c9c9, white, #f3f474);
+	}
+
+	.sidebar {
+	position:relative;
+	width:100%;
+	float:left;
+	top: 0px;
+	height:100%;
+	padding-bottom: 0px;
+	font-size: 1.3em;
+	}
+
+}
